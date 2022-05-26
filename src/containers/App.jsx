@@ -1,9 +1,13 @@
 import React from 'react';
+import 'bootstrap';
+import SearchInput from '../components/SearchInput';
+import SearchInputContainer from './SearchInputContainer';
 
 const App = () => {
     return (
         <div>
-            <h1>Testing...</h1>
+            <SearchInput />
+            <SearchInputContainer />
         </div>
     );
 };

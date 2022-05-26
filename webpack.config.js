@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
-    mode: 'production',
+    mode: 'development',
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist/'),
@@ -13,9 +13,10 @@ module.exports = {
             '.js',
             '.jsx'
         ],
-        // alias: {
-
-        // }
+        alias: {
+            '@components': path.resolve(__dirname, 'src/components/'),
+            '@containers': path.resolve(__dirname, 'src/containers/')
+        }
     },
     module: {
         rules: [
@@ -30,6 +31,13 @@ module.exports = {
                 test: /\.html$/,
                 use: [
                     'html-loader'
+                ]
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader'
                 ]
             }
         ]

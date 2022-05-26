@@ -13,9 +13,10 @@ module.exports = {
             '.js',
             '.jsx'
         ],
-        // alias: {
-
-        // }
+        alias: {
+            '@components': path.resolve(__dirname, 'src/components/'),
+            '@containers': path.resolve(__dirname, 'src/containers/')
+        }
     },
     module: {
         rules: [
@@ -30,6 +31,13 @@ module.exports = {
                 test: /\.html$/,
                 use: [
                     'html-loader'
+                ]
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader'
                 ]
             }
         ]
