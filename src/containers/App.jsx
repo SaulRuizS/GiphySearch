@@ -1,14 +1,14 @@
 import React from 'react';
 import 'bootstrap';
-import SearchInput from '../components/SearchInput';
-import SearchInputContainer from './SearchInputContainer';
+import Header from './Header';
+import ImagesContainer from './ImagesContainer';
 
 const App = () => {
     return (
-        <div>
-            <SearchInput />
-            <SearchInputContainer />
-        </div>
+        <>
+            <Header />
+            <ImagesContainer />
+        </>
     );
 };
 
