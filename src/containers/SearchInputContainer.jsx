@@ -1,6 +1,4 @@
 import React from 'react';
-import 'bootstrap';
-import '@styles/SearchInputContainer.css';
 import SearchInput from '@components/SearchInput';
 import SearchButton from '@components/SearchButton';
 

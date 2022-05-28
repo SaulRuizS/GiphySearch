@@ -1,0 +1,20 @@
+.gifs-container {
+    height: 1400px;
+    padding-top: 151px;
+}
+
+.gif-card {
+    height: auto;
+    width: auto;
+    padding: 0px;
+}
+
+.gif-card img {
+    height: auto;
+    width: 100%;
+}
+
+.giphy-logo {
+    height: 27px;
+    width: 100%;
+}

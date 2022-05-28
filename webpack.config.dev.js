@@ -17,6 +17,8 @@ module.exports = {
             '@components': path.resolve(__dirname, 'src/components/'),
             '@containers': path.resolve(__dirname, 'src/containers/'),
             '@styles': path.resolve(__dirname, 'src/styles/'),
+            '@public': path.resolve(__dirname, 'public/'),
+            '@hooks': path.resolve(__dirname, 'src/hooks/'),
         }
     },
     module: {
@@ -40,7 +42,18 @@ module.exports = {
                     'style-loader',
                     'css-loader'
                 ]
-            }
+            },
+            {
+                test: /\.(png|jpg|jpeg|gif)$/,
+                type: 'asset/resource'
+            },
+            // {
+            //     test: /\.(png|jpg|jpeg|gif)$/,
+            //     use: [
+            //         'url-loader',
+            //         'file-loader'
+            //     ]
+            // }
         ]
     },
     plugins: [

@@ -1,13 +1,13 @@
 import React from 'react';
 import 'bootstrap';
 import Header from './Header';
-import ImagesContainer from './ImagesContainer';
+import GifsContainer from './GifsContainer';
 
 const App = () => {
     return (
         <>
             <Header />
-            <ImagesContainer />
+            <GifsContainer />
         </>
     );
 };
