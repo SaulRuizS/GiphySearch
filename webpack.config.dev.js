@@ -46,14 +46,7 @@ module.exports = {
             {
                 test: /\.(png|jpg|jpeg|gif)$/,
                 type: 'asset'
-            },
-            // {
-            //     test: /\.(png|jpg|jpeg|gif)$/,
-            //     use: [
-            //         'url-loader',
-            //         'file-loader'
-            //     ]
-            // }
+            }
         ]
     },
     plugins: [

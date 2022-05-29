@@ -4,6 +4,8 @@ const useAPIcall = (gifURL) => {
 
     const [ gifsReceived, setGifsReceived ] = useState([]);
 
+
+
     useEffect( async () => {
         const call = await fetch(gifURL);
         const jsonResponse = await call.json();

@@ -1,3 +1,7 @@
+.header {
+    z-index: 1;
+}
+
 .gifs-container {
     min-height: 100vh;
     padding-top: 151px;
@@ -12,9 +16,15 @@
 .gif-card img {
     height: auto;
     width: 100%;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .giphy-logo {
-    height: 27px;
+    height: auto;
     width: 100%;
+}
+
+.copy-url-button {
+    position: relative;
+    bottom: 10px;
 }

@@ -18,12 +18,13 @@ const GifsContainer = () => {
     const gifsData = useAPIcall(gifURL);
 
     return (
-        <div className='container-sm bg-danger gifs-container'>
+        <div className='container-xl bg-danger gifs-container'>
             {
                 gifsData.map(
                     gifData => (
                         <GifCard
                             gifUrl={gifData.images.downsized.url}
+                            key={gifData.id}
                         />
                     )
                 )
