@@ -6,7 +6,7 @@ const SearchButton = () => {
         <div className='col-4'>
             <button
                 className='btn btn-info w-100 h-100'
-                onClick={useAPIcall}
+                // onClick={() => useAPIcall()}
             >Search</button>
         </div>
     );

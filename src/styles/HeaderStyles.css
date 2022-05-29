@@ -1,5 +1,5 @@
 .gifs-container {
-    height: 1400px;
+    min-height: 100vh;
     padding-top: 151px;
 }
 
