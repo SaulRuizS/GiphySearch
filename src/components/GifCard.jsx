@@ -1,7 +1,5 @@
 import React from 'react';
-import CopyUrlButton from './CopyUrlButton';
-
-// const randomGif = "https://media3.giphy.com/media/ghAbYUswkmXHq/giphy.gif?cid=0a58050849e6d7c57e12e264244b269accccb0b1f19ea408&rid=giphy.gif&ct=g"
+import CopyUrlButton from '@components/CopyUrlButton';
 
 const GifCard = ({gifUrl}) => {
 
@@ -13,7 +11,9 @@ const GifCard = ({gifUrl}) => {
                     alt=""
                     className='img-fluid mx-auto d-block'
                 />
-                <CopyUrlButton />
+                <CopyUrlButton
+                    gifUrl={gifUrl}
+                />
             </div>
         </div>
     );

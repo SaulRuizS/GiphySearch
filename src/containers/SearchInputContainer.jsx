@@ -4,7 +4,7 @@ import SearchButton from '@components/SearchButton';
 
 const SearchInputContainer = () => {
     return (
-        <form action=''>
+        <form action='#'>
             <div className='row mt-4'>
                 <SearchInput />
                 <SearchButton />

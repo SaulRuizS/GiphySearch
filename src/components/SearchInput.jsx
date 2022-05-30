@@ -15,7 +15,7 @@ const SearchInput = () => {
                 className='form-control w-100'
                 onChange={(event) => {
                     setInputText(event.target.value)
-                    console.log(event.target.value)
+                    // console.log(event.target.value)
                 }}
             />
         </div>
