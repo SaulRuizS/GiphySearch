@@ -1,15 +1,10 @@
 import React, { useContext } from 'react';
 import GifCard from '@components/GifCard';
-import AppContext from '../context/AppContext'
-// import useAPIcall from '@hooks/useAPIcall';
+import useAPIcall from '@hooks/useAPIcall';
 
 const GifsContainer = () => {
 
-    const {
-        gifsReceived,
-    } = useContext(AppContext);
-
-    const gifsData = gifsReceived;
+    const gifsData = useAPIcall();
 
     return (
         <div className='container-xl bg-danger gifs-container'>

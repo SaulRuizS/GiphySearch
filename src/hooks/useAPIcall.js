@@ -1,16 +1,20 @@
-import { useState, useEffect, useContext } from "react";
-// import AppContext from "../context/AppContext";
+import { useEffect, useContext } from "react";
+import AppContext from "@context/AppContext";
 
 const useAPIcall = () => {
 
-    const [ gifsReceived, setGifsReceived ] = useState([]);
+    const {
+        queryText,
+        gifsReceived,
+        setGifsReceived,
+    } = useContext(AppContext);
 
     const apiOptions = {
         api_key: 'Mo3yNbRox7H6GMPwmaXouUnqVZFq2vAy',
-        q: 'kitten',
+        q: `${queryText}`,
         limit: 20,
         offset: 0,
-        rating: 'g',
+        rating: 'r',
         lang: 'en',
     }
     
@@ -23,7 +27,7 @@ const useAPIcall = () => {
             setGifsReceived(jsonResponse.data);
         }
         fetchData()
-    },[])
+    },[queryText])
 
     return gifsReceived;
 }
