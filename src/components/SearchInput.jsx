@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import AppContext from '../context/AppContext';
 
 const SearchInput = () => {
+
+    const {
+        setInputText,
+    } = useContext(AppContext)
+
     return (
         <div className='col-8'>
-            <input 
+            <input
                 type="text"
                 placeholder='Search gifs'
                 className='form-control w-100'
+                onChange={(event) => {
+                    setInputText(event.target.value)
+                    console.log(event.target.value)
+                }}
             />
         </div>
     );
