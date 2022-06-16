@@ -12,17 +12,19 @@ const GifsContainer = () => {
     const gifsData = useAPIcall();
 
     return (
-        <div className='container-xl bg-dark gifs-container'>
-            {
-                gifsData.map(
-                    gifData => (
-                        <GifCard
-                            gifUrl={gifData.images.downsized.url}
-                            key={gifData.id}
-                        />
+        <div className='container-fluid vw-100 bg-dark gifs-container'>
+            <div className='row'>
+                {
+                    gifsData.map(
+                        gifData => (
+                            <GifCard
+                                gifUrl={gifData.images.downsized.url}
+                                key={gifData.id}
+                            />
+                        )
                     )
-                )
-            }
+                }
+            </div>
         </div>
     );
 };

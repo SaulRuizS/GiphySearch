@@ -14,8 +14,7 @@ const SearchInput = () => {
                 placeholder='Enter a topic'
                 className='form-control w-100'
                 onChange={(event) => {
-                    setInputText(event.target.value)
-                    // console.log(event.target.value)
+                    setInputText(event.target.value);
                 }}
             />
         </div>

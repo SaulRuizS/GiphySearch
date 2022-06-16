@@ -4,17 +4,15 @@ import CopyUrlButton from '@components/CopyUrlButton';
 const GifCard = ({gifUrl}) => {
 
     return (
-        <div className='row w-auto'>
-            <div className='col m-4 p-0 gif-card'>
-                <img
-                    src={gifUrl}
-                    alt=""
-                    className='img-fluid mx-auto d-block'
-                />
-                <CopyUrlButton
-                    gifUrl={gifUrl}
-                />
-            </div>
+        <div className='col-10 col-sm-5 col-md-3 col-lg-2 m-4 p-0 justify-content-center gif-card'>
+            <img
+                src={gifUrl}
+                alt="gif"
+                className='img-fluid mx-auto d-block'
+            />
+            <CopyUrlButton
+                gifUrl={gifUrl}
+            />
         </div>
     );
 };
