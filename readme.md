@@ -22,7 +22,7 @@ If you want to copy a GIF click on the "Copy GIF button".
 
 ## Contributing
 
-Feel free to contribute in any form.
+Feel free to contribute.
 
 ## License
 
